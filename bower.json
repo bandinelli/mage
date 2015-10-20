@@ -1,0 +1,27 @@
+{
+  "name": "mage",
+  "homepage": "https://github.com/bandinelli/mage",
+  "authors": [
+    "erkweb93 <erkweb@hotmail.com>"
+  ],
+  "description": "Framework Front-End",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "mage",
+    "framework",
+    "front-end"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.7"
+  }
+}
