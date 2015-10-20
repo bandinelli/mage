@@ -1,0 +1,89 @@
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  flow: ltl,
+  last-flow:from,
+  output: float,
+  gutter-position: split,
+);
+
+.container{
+  @include container(1180px);
+}
+
+.row{
+  @include break;
+}
+
+.col-m1{
+  float: left !important;
+  @include span(1 of 12);
+}
+
+.col-m2{
+  float: left;
+  @include span(2 of 12);
+}
+
+.col-m3{
+  float: left;
+  @include span(3 of 12);
+}
+
+.col-m4{
+  float: left;
+  @include span(4 of 12);
+}
+
+.col-m5{
+  float: left;
+  @include span(5 of 12);
+}
+
+.col-m6{
+  float: left;
+  @include span(6 of 12);
+}
+
+.col-m7{
+  float: left;
+  @include span(7 of 12);
+}
+
+.col-m8{
+  float: left;
+  @include span(8 of 12);
+}
+
+.col-m9{
+  float: left !important;
+  @include span(9 of 12);
+}
+
+.col-m10{
+  float: left;
+  @include span(10 of 12);
+}
+
+.col-m11{
+  float: left;
+  @include span(11 of 12);
+}
+
+.col-m12{
+  float: left;
+  @include span(12 of 12);
+}
+$small: max-width 320px;
+
+@include breakpoint($small) {
+   @include with-layout(12) {
+     .col-s12{
+       @include span(12 of 12);
+     }
+   }
+}
