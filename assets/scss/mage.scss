@@ -1,5 +1,6 @@
 @import "susy";
 @import "breakpoint";
+@import "variables";
 
 $susy: (
   columns: 12,
@@ -12,7 +13,7 @@ $susy: (
 );
 
 .container{
-  @include container(1180px);
+  @include container(1170px);
 }
 
 .row{
@@ -20,32 +21,26 @@ $susy: (
 }
 
 .col-m1{
-  float: left !important;
   @include span(1 of 12);
 }
 
 .col-m2{
-  float: left;
   @include span(2 of 12);
 }
 
 .col-m3{
-  float: left;
   @include span(3 of 12);
 }
 
 .col-m4{
-  float: left;
   @include span(4 of 12);
 }
 
 .col-m5{
-  float: left;
   @include span(5 of 12);
 }
 
 .col-m6{
-  float: left;
   @include span(6 of 12);
 }
 
@@ -55,35 +50,73 @@ $susy: (
 }
 
 .col-m8{
-  float: left;
   @include span(8 of 12);
 }
 
 .col-m9{
-  float: left !important;
   @include span(9 of 12);
 }
 
 .col-m10{
-  float: left;
   @include span(10 of 12);
 }
 
 .col-m11{
-  float: left;
   @include span(11 of 12);
 }
 
 .col-m12{
-  float: left;
   @include span(12 of 12);
 }
-$small: max-width 320px;
 
 @include breakpoint($small) {
    @include with-layout(12) {
      .col-s12{
        @include span(12 of 12);
+     }
+
+     .col-s11{
+       @include span(11 of 12);
+     }
+
+     .col-s10{
+       @include span(10 of 12);
+     }
+
+     .col-s9{
+       @include span(9 of 12);
+     }
+
+     .col-s8{
+       @include span(8 of 12);
+     }
+
+     .col-s7{
+       @include span(7 of 12);
+     }
+
+     .col-s6{
+       @include span(6 of 12);
+     }
+
+     .col-s5{
+       @include span(5 of 12);
+     }
+
+     .col-s4{
+       @include span(4 of 12);
+     }
+
+     .col-s3{
+       @include span(3 of 12);
+     }
+
+     .col-s2{
+       @include span(2 of 12);
+     }
+
+     .col-s1{
+       @include span(1 of 12);
      }
    }
 }
